@@ -1,0 +1,117 @@
+/* Steps Section Styles */
+.stepsSection {
+  position: relative;
+  background-color: #000000;
+}
+
+.stepsSectionContent {
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.stepsTitle {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 64px;
+  color: white;
+}
+
+.cardcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #000063 10%, #000000 90%);
+  padding: 40px;
+  border-radius: 35px;
+  gap: 48px;
+}
+
+.cardimage {
+  border: 0px solid black;
+  max-width: 100%;
+  height: auto;
+}
+
+.stepCard {
+  margin-bottom: 48px;
+  background: black;
+  border-radius: 24px;
+  padding: clamp(20px, 3vw, 32px);
+  border: 5px solid #FFFFFF61;
+  transition: all 0.3s;
+  max-width: 800px;
+  position: sticky;
+  top: 20px;
+  width: 100%;
+}
+
+.stepCard:hover {
+  border-color: rgba(59, 130, 246, 0.7);
+  transform: scale(1.02);
+}
+
+.stepCardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.stepNumber {
+  flex-shrink: 0;
+}
+
+.stepNumberText {
+  font-size: clamp(3rem, 8vw, 4.5rem);
+  font-weight: bold;
+  line-height: 1;
+  color: white;
+}
+
+.stepTitle {
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: bold;
+  margin-top: 8px;
+  color: white;
+}
+
+.stepVisual {
+  width: 100%;
+}
+
+.stepDescription {
+  flex: 1;
+  font-size: 14px;
+  color: #d1d5db;
+  margin-top: 16px;
+}
+
+.stepDescriptionTitle {
+  font-weight: bold;
+  color: white;
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .stepCardContent {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .stepCard:nth-child(2) .stepCardContent {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 767px) {
+  .stepsTitle {
+    font-size: 2rem;
+  }
+  
+  .cardcontainer {
+    padding: 20px;
+  }
+}

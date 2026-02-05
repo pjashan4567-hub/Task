@@ -1,0 +1,180 @@
+/* Navigation Styles */
+.nav {
+  background-color: #000000;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.navContent {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  gap: 5px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.horizonal {
+  width: 30vh;
+}
+
+.logoIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoIconText {
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.verticalline {
+  width: 4px;
+  height: 37px;
+  background-color: white;
+  margin-left: 15px;
+}
+
+.logoText {
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.userIcon {
+  font-size: 18px;
+}
+
+.userName {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.separator {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.dropdownIcon {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px;
+  transition: transform 0.2s ease;
+}
+
+.iconButton:hover {
+  opacity: 0.8;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menuRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 12px 0;
+  border-top: 1px solid #2d2d2d;
+  font-size: 14px;
+}
+
+.menuItem {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.menuItem:hover {
+  color: white;
+}
+
+.menuItemActive {
+  color: white;
+}
+
+.menuItemWithDropdown {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  color: #d1d5db;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.menuItemWithDropdown:hover {
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .menuRow {
+    display: none;
+  }
+
+  .navRight {
+    display: none;
+  }
+
+  .horizonal {
+    width: 10vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .menuButton {
+    display: none;
+  }
+}
