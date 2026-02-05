@@ -133,7 +133,7 @@
 }
 
 .heroButton {
-  background-color: #2563eb;
+  background-color: #0000FF;
   color: white;
   padding: 12px 32px;
   border-radius: 8px;
@@ -148,8 +148,8 @@
 }
 
 .heroButton:hover {
-  background-color: #1d4ed8;
-  transform: scale(1.05);
+  /* background-color: #1d4ed8; */
+  transform: scale(1.05) !important ;
 }
 
 /* Responsive */
