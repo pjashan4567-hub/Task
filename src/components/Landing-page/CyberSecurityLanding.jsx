@@ -6,7 +6,7 @@ import second from "/02.png";
 import third from "/03.png";
 import firsteffect from "/firsteffect.jpg";
 import secondeffect from "/2ndeffect.jpg";
-import styles from "./CyberSecurityLanding.module.css";
+import styles from "./Cybersecuritylanding.module.css";
 import { FaArrowUp, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 export default function CyberSecurityLanding() {
