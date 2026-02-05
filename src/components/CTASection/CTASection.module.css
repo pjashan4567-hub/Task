@@ -22,7 +22,8 @@
   color: white;
 }
 .image{
-  height:113px;
+  min-height:113px;
+  padding: 10px;
 }
 .ctaButton {
   background-color: #0000FF;
